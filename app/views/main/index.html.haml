@@ -1,0 +1,14 @@
+.container
+  .row
+    .col-md-12
+      %h1 TCS where_is simulator
+      - if @response
+        %h2 Previous query
+        %p= @response.first
+        %h3 Response
+        %p= @response.last
+        %h2 New query
+      = form_tag root_path do
+        .form-group
+          = text_field_tag :query
+        = submit_tag 'Submit', class: 'btn btn-default'
