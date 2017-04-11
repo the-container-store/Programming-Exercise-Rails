@@ -1,2 +1,2 @@
-# Where-Is-Exercise
+# Programming-Exercise-Rails
 Project for Ruby/Rails developer candidates
