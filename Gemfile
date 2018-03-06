@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.4'
+gem 'rails', '4.2.10'
 gem 'haml-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
@@ -14,4 +14,4 @@ group :production do
   gem 'rails_12factor'
 end
 
-ruby '2.2.0'
+ruby '2.4.3'
