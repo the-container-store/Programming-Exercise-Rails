@@ -7,19 +7,6 @@ class MainController < ApplicationController
     end
   end
 
-  def incoming
-    body = params["Body"]
-    response = reply_for body
-    twilio_number = '4694164526'
-    client = Twilio::REST::Client.new '(account_sid)', '(auth_token)'
-    message = client.account.messages.create(
-      from: twilio_number,
-      to: params["From"],
-      body: response
-      )
-    render nothing: true
-  end
-
   def reply_for(query)
     query + ' is located ' + case query.downcase
     when 'fill their baskets', 'service selection price', 'man in the desert', 'air of excitement'
