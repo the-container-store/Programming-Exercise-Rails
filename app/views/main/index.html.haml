@@ -11,4 +11,4 @@
       = form_tag root_path do
         .form-group
           = text_field_tag :query
-        = submit_tag 'Submit', class: 'btn btn-default'
+        = submit_tag "Submit", class: "btn btn-primary", data: { toggle: "tooltip", placement: "top" }, title: "Find your room!"
